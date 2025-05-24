@@ -8,7 +8,7 @@ This website is used for friends where a person can ask them if they like you. T
 - HTML, CSS, JavaScript  
 
 ### 🔗 Links
-[![Like-Me website link](https://img.shields.io/badge/Like--Me%20website-FFD700?style=for-the-badge&logo=Website&logoColor=white)](https://nagarajgolai.github.io/do-you-like-me--/)]
+[![Live website link](https://img.shields.io/badge/Like--Me%20website-FFD700?style=for-the-badge&logo=Website&logoColor=white)](https://nagarajgolai.github.io/do-you-like-me--/)
 
 [![My Portfolio](https://img.shields.io/badge/My%20Portfolio-800080?style=for-the-badge&logo=ko-fi&logoColor=white)](https://nagarajgolai-portfolio.netlify.app/)
 
