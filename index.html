@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Like Test</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="mainDiv">
+      <h2>Do you like me ?</h2>
+      <button id="yesButton" style="background-color: green;">Yes
+        <div id="iki">
+            I knew it
+          </div>
+      </button>
+      
+      <button id="noButton" onmouseleave="transformOut()" onmouseover="transform()" onclick="transform()" onmouseenter="transform()"><span onmouseover="transform()" onclick="handleClick()" onmouseenter="transform1()" id="spanNo">No</span></button>
+    </div>
+
+    <span id="cp">&copy Reserved to Nagaraj Golai</span>
+
+    <script>
+        const noButton = document.getElementById('noButton');
+
+        function transform(){
+            let x1 = (Math.random() * 100) + 40;
+            let sign = Math.random()<0.5?-1:1;
+            let y1 = (Math.random() * 100)+40;
+            let x = x1 * sign;
+            let y = y1 * sign;
+        
+            noButton.style.transform = `translate(${x}px, ${y}px)`;
+            console.log(`${x},${y}`)
+            noButton.style.scale = '0.8'
+        }
+
+        function transform1(){
+            let x1 = (Math.random() * 100) + 40;
+            let sign = Math.random()<0.5?-1:1;
+            let y1 = (Math.random() * 100)+40;
+            let x = x1 * sign;
+            let y = y1 * sign;
+        
+            noButton.style.transform = `translate(${x}px, ${y}px)`;
+            console.log(`${x},${y}`)
+            noButton.style.scale = '0.1'
+        }
+
+        function transformOut(){
+            noButton.style.scale = '1'
+        }
+        
+        function handleClick(){
+            transform();
+            setTimeout(transformOut, 0);
+        }
+
+    </script>
+  </body>
+</html>
